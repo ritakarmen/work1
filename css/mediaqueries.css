@@ -1,0 +1,2611 @@
+
+@media only screen and (max-width: 1220px) and (min-width: 5px) {
+
+	.central-wrapper,
+	.cont_publicar .central-wrapper{
+		width: auto;
+		padding: 0 10px 0 10px;
+	}
+	
+	.top_detalle{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+	}
+
+	.cont_buscador_redes{
+		right: 10px;
+	}
+
+	.listado_anuncios li{
+		width: 23%;
+	}
+
+	.listado_anuncios li a{
+		display: block;
+		width: auto;
+	}
+
+	.imagen_anuncio{
+		height: auto;
+		overflow: visible;
+	}
+
+	.ver_detalle{
+		display: none;
+	}
+
+	.imagen_anuncio:before{
+		content: "";
+		width: 36px;
+		height: 36px;
+		background: #0e0e0e url(../images/mas.png) no-repeat center;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		-khtml-border-radius: 50%;
+		position: absolute;
+		bottom: -18px;
+		left: 0px;
+		right: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		-webkit-transition: all 0.25s ease-out;
+		-moz-transition: all 0.25s ease-out;
+		-o-transition: all 0.25s ease-out;
+		-ms-transition: all 0.25s ease-out;
+		transition: all 0.25s ease-out;
+		z-index: 10
+	}
+
+	.listado_anuncios li a:hover .imagen_anuncio:before{
+		background-color: #f53e3e;
+	}
+
+	.listado_anuncios li a:hover img{
+		-moz-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+
+	.listado_vehiculos .imagen_anuncio:before{
+		display: none;
+	}
+
+	.listado_vehiculos .cont_anuncios .ver_detalle{
+		display: block;
+	}
+
+	.block_enlaces{
+		margin: 31px 58px 0 58px;
+	}
+
+	.listado_vehiculos{
+		width: 79%;
+		float: left;
+		margin-left: 15px;
+	}
+
+	.titulo_precio h2 {
+		width: 62%
+	}
+
+	.contenido_resumen{
+		width: 68%;
+		margin-left: 10px;
+	}
+
+	.filtros_listado{
+		width: 19.4%;
+	}
+
+	.box_filtro select{
+		width: 82%;
+	}
+
+	.mas_filtros select{
+		width: 100%!important;
+	}
+
+	.filtros_listado h2{
+		font-size: 15px;
+		padding: 4px 0 0px 55px;
+	}
+
+	.imagen_caracteristicas_detalle{
+		width: 825px;
+		float: left;
+		padding-left: 15px;
+	}
+
+
+
+	.cont_confirm_anuncio .cont_anuncios{
+		margin-left: 0;
+	}
+
+
+	.cont_confirm_anuncio .contenido_resumen{
+		float: inherit;
+	}
+
+
+	.cont_subtotal{
+		margin-left: 0;
+		padding-bottom: 0;
+	}
+
+
+	.comprobante_pago h5{
+		padding-left: 0;
+	}
+
+	.comprobante_pago .inf_genero,
+	.comprobante_pago .datos_caracteristicas,
+	.metodos_de_pago h5,
+	.finalizar_pago{
+		padding-left: 0;
+	}
+
+	.menu_lateral_cuenta{
+		width: 22%;
+		padding-left: 0;
+	}
+
+	.right_cuenta{
+		width: 76%;
+		float: left;
+		margin-left: 15px;
+	}
+
+	.cont_anuncios li{
+		padding: 28px 15px 28px 15px;
+	}
+
+	.right_cuenta .imagen_anuncio:before{
+		display: none;
+	}
+
+	.cont_detalle_anunciante .imagen_anuncio:before{
+		display: none;
+	}
+
+	.cont_ingresar{
+		right: 10px;
+		margin-left: 10px;
+	}
+	
+	.cont_tipo_vehiculo li a{
+		width: 142px;
+		font-size: 14px;
+		font-family: 'ralewaybold';
+	}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1209px) and (min-width: 5px) {
+
+	.block_enlaces{
+		margin: 31px 45px 0 45px;
+	}
+}
+
+@media only screen and (max-width: 1131px) and (min-width: 5px) {
+
+	.block_enlaces{
+		margin: 31px 15px 0 25px;
+	}
+}
+
+@media only screen and (max-width: 1208px) and (min-width: 5px) {
+
+
+	.cont_detalle_anunciante .imagen_caracteristicas_detalle{
+		float: inherit;
+		width: 100%;
+		padding-left: 0;
+	}
+
+
+	.cont_detalle_anunciante .box_filtro h3{
+		margin-bottom: 0;
+	}
+
+
+	.cont_detalle_anunciante .form_contact_anunciante{
+		margin-top: 10px;
+	}
+
+	.cont_detalle_anunciante .form_contact_anunciante input{
+		margin-bottom: 5px;
+	}
+
+	.cont_detalle_anunciante .form_contact_anunciante textarea{
+		height: 70px
+	}
+
+	.cont_detalle_anunciante .form_contact_anunciante span{
+		    margin: 8px 0 0 0;
+	}
+
+
+	.cont_detalle_anunciante .box_filtro{
+		margin-bottom: 0;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.cont_detalle_anunciante .caracteristica_contactar{
+		padding-top: 10px;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 1193px) and (min-width: 5px) {
+
+
+	.caracteristica_contactar{
+		width: 28%;
+	}
+
+	.imagen_caracteristicas_detalle{
+		width: 70%;
+	}
+
+	#section-2 .mas_caracteristicas table tr td.t-value{
+		text-align: center;
+	}
+
+
+	#section-2 .mas_caracteristicas table tr td.t-label{
+		text-align: left;
+	}
+
+
+	.caracteristica_contactar .minimizar{
+		display: none;
+	}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1164px) and (min-width: 5px) {
+
+	.compras_seguras .ico_payu{
+		margin-left: 10px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1152px) and (min-width: 5px) {
+
+	.cont_boletin{
+		padding-top: 20px;
+	}
+
+	.txt_boletin{
+		display: block;
+		width:auto;
+		padding-bottom: 13px;
+		padding-left: 0;
+		text-align: center;
+		background-position: center top;
+		padding-top: 89px;
+	}
+
+	.form_boletin{
+		display: block;
+		float: inherit;
+		margin: 10px 0 0 0;
+		text-align: center;
+	}
+
+	.form_boletin span{
+		text-align: left;
+	}
+
+	.box_filtro{
+		padding: 18px 10px 24px 11px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 1149px) and (min-width: 5px) {
+
+	.resumen_anuncio a{
+		width: 25%;
+		display: inline-flex!important;
+		margin: 5px 0 5px 0;
+	}
+
+
+	.resumen_anuncio span{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1140px) and (min-width: 5px) {
+
+
+	.cont_tags{
+		width: 76%;
+	}
+
+	.cont_tags span{
+		margin: 4px 1px 4px 1px;
+	}
+
+	.anunciante{
+		bottom: 43px;
+	}
+
+
+	.filtros_listado{
+		width: 18%;
+	}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 1132px) and (min-width: 5px) {
+
+	.cont_marca_modelo li{
+		width: 15%;
+	}
+
+	.logo_marca {
+		width: 60%;
+	}
+
+	.user_avatar{
+		float: inherit;
+		margin-bottom: 10px;
+	}
+
+	.top_menu_lateral{
+		padding-bottom: 15px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1124px) and (min-width: 5px) {
+
+	.redes_top{
+		width: auto;
+		text-align: left;
+	}
+
+	.redes_top a{
+		margin: 0px 0 0px -3px;
+	}
+
+	.banner-text-container h2{
+		font-size: 30px;
+		line-height: 34px;
+	}
+
+
+	.banner-text-container{
+		bottom: 44%;
+	}
+
+
+	.listado_menu,
+	.telefono_lateral,
+	.email_lateral{
+		padding-left: 0px;
+	}
+
+	.listado_menu a i,
+	.telefono_lateral i,
+	.email_lateral i{
+		margin-right: 8px;
+	}
+
+	.telefono_lateral a,
+	.email_lateral a{
+		margin-left: 0;
+	}
+
+
+	.mostrar_perfil{
+		font-size: 13px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.listado_menu a{
+		font-size: 13px;
+	}
+
+	.telefono_lateral span,
+	.email_lateral span{
+		font-size: 14px;
+	}
+
+	.telefono_lateral a,
+	.email_lateral a{
+		font-size: 15px;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 1104px) and (min-width: 5px) {
+
+	.datos_perfil{
+		width: 29%;
+		margin-left: 10px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1096px) and (min-width: 5px) {
+
+	.central_telefonica,
+	.redes_bottom {
+		width: 260px;
+	}
+
+
+	.redes_bottom a{
+		margin: 0 10px 0 10px;
+	}
+
+	.siswebperu a,
+	.copy{
+		font-size: 13px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1091px) and (min-width: 5px) {
+
+	.cont_planes ul li{
+		width: 32%;
+	}
+
+	.cont_planes p{
+		position: relative;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		padding-left: 32px;
+		padding-right: 10px;
+		line-height: 18px;
+	}
+
+	.cont_planes p i{
+		position: absolute;
+		left: 5px;
+		top: 13px;
+	}
+
+	.planes_negocio{
+		margin: 0 10px 0 10px;
+	}
+
+	.cont_planes p.centrar{
+		padding-left: 10px;
+	}
+
+	.subir_chicos{
+		text-align: center;
+	}
+
+	.subir_chicos a{
+		width: 18%
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 1089px) and (min-width: 5px) {
+
+	.right_cuenta .contenido_resumen{
+		width: 68%;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1077px) and (min-width: 5px) {
+
+	.box_caracteristicas:nth-child(2){
+		margin-left: 0;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1066px) and (min-width: 5px) {
+
+	.datos_caracteristicas label{
+		font-size: 14px;
+		font-family: 'ralewaysemibold';
+	}
+
+
+	.datos_caracteristicas .box_caract{
+		padding: 0 10px
+	}
+
+	.datos_subir_video span{
+		width: 37%;
+		margin-top: -3px;
+	}
+
+	
+}
+
+
+@media only screen and (max-width: 1057px) and (min-width: 5px) {
+
+	.right_cuenta .contenido_resumen {
+		width: 66%;
+	}
+
+}
+
+
+@media only screen and (max-width: 1050px) and (min-width: 5px) {
+
+	.filtros_listado{
+		width: 190px;
+	}
+
+
+	.contenido_resumen {
+		width: 65%;
+	}
+
+
+	.anunciante{
+		width: 110px;
+		text-align: center;
+		bottom: 0;
+	}
+
+	.datos_anunciante{
+		width: auto;
+		display: block;
+		float: inherit;
+		margin-left: 0;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.datos_anunciante .fono_anunc,
+	.mostrar_fono{
+		display: none!important;
+	}
+
+	.caract_anuncio{
+		width: 65%;
+	}
+
+	.det_datos_anunciante .mostrar_fono{
+		display: block!important;
+		font-size: 12px;
+		text-align: left;
+	}
+
+	.det_datos_anunciante .fono_anunc{
+		font-size: 13px;
+		font-family: 'museo_sans500';
+		margin-right: 0;
+	}
+
+	.det_img_anunciante{
+		    width: 37%;
+	}
+
+	.det_datos_anunciante{
+		width: 59%;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 1033px) and (min-width: 5px) {
+
+	.mostrar_img_avatar{
+		float: inherit;
+	}
+
+	.subir_img_avatar{
+		float: inherit;
+		width: auto;
+		display: block;
+	}
+
+
+	.inf_principal h4{
+		margin-top: 15px;
+	}
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 5px) {
+
+	.cont_buscador_home{
+		width: auto;
+		margin: -146px auto 7px auto;
+		padding: 10px 10px 10px 10px;
+		background-color: transparent;
+	}
+
+	.cont_tabs_buscador{
+		text-align: center;
+	}
+
+	.cont_tabs_buscador select{
+		width: 19%;
+		display: inline-block;
+		font-size: 13px;
+		padding: 0 8px 0 8px;
+		margin: 18px 5px 18px 0;
+	}
+
+	.cont_tabs_buscador input[type="text"]{
+		display: inline-block;
+		font-size: 13px;
+		padding: 0 8px 0 8px;
+		margin: 18px 5px 18px 0;
+	}
+
+	.search-box{
+		display: none;
+	}
+
+
+	.box_nombres{
+		display: block;
+		float: inherit;
+		width:auto;
+	}
+
+	.box_cocumento{
+		display: block;
+		float: inherit;
+		margin-left: 0;
+		margin-bottom: 14px;
+		width: auto;
+	}
+
+	.box_nombres .box_cocumento:last-child{
+		float: inherit;
+	}
+
+
+	.box_nombres .box_cocumento input,
+	.box_cocumento input,
+	.box_ubicacion select{
+		width: 100%!important;
+		margin-left: 0!important;
+	}
+
+
+	.box_largo .box_cocumento{
+		margin-right: 0;
+	}
+
+
+	.box_cocumento select{
+		width: 100%;
+		margin-bottom: 3px;
+	}
+
+	.inf_principal label{
+		font-size: 15px;
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 5px){
+
+	.datos_caracteristicas label{
+		float: inherit;
+		display: block;
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.datos_caracteristicas select,
+	.datos_caracteristicas input{
+		float: inherit;
+		display: block;
+		width: 100%;
+		max-width: inherit;
+	}
+
+	.datos_precio select{
+		float: left!important;
+		width: 33%;
+		padding-left: 4px;
+	}
+
+	.datos_precio input{
+		float: right;
+		width: 62%;
+	}
+
+
+	.datos_caracteristicas .box_caract .css-label{
+		margin-top: 30px;
+	}
+
+	.datos_descripcion label{
+		float: inherit;
+	}
+
+	.datos_descripcion textarea{
+		float: inherit;
+		width: 100%;
+	}
+
+	.datos_descripcion span{
+		margin-left: 0;
+		margin-top: 8px;
+	}
+
+	.cont_publicar h3{
+		margin-bottom: 10px;
+	}
+
+	.box_caracteristicas{
+		margin: 15px 0 0px 0;
+	}
+
+
+}
+
+@media only screen and (max-width: 998px) and (min-width: 5px){
+
+	.right_cuenta .contenido_resumen {
+		width: 62%;
+	}
+
+	.right_cuenta .caract_anuncio{
+		    width: 59%;
+	}
+
+}
+
+
+@media only screen and (max-width: 996px) and (min-width: 5px){
+
+	.listado_vehiculos {
+		width: 76%;
+	}
+
+
+	.contenido_resumen{
+		width: 61%;
+	}
+
+
+	.titulo_precio h2{
+		width: 58%;
+	}
+
+	.caract_anuncio{
+		    width: 59%;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 960px) and (min-width: 5px) {
+
+	.filtros_listado{
+		    width: 170px;
+	}
+
+	.titulo_precio h2{
+		display: block;
+		width: auto;
+		float: inherit;
+	}
+
+	.titulo_precio span{
+		display: block;
+		float: inherit;
+		background-color: transparent;
+		padding: 0 0 0 0;
+		margin: 4px 0 3px 0;
+	}
+
+
+	.titulo_precio span a{
+		color: #f53e3e
+	}
+
+}
+
+
+
+@media only screen and (max-width: 946px) and (min-width: 5px) {
+
+	.central_telefonica, .redes_bottom {
+		width: 237px;
+	}
+
+	.block_enlaces {
+		margin: 31px 18px 0 18px;
+	}
+
+	.menu_listado{
+		display: block;
+		margin-left: 0;
+		text-align: center;
+	}
+
+}
+
+
+@media only screen and (max-width: 940px) and (min-width: 5px) {
+
+	.top_detalle h1{
+		float: inherit;
+		width: auto;
+		line-height: 25px;
+	}
+
+	.top_detalle .precio_detalle{
+		display: block;
+		margin-left: 0;
+		background-color: transparent;
+		padding: 0 0 0 0;
+		margin: 6px 0 0 0;
+	}
+
+	.compartir_anuncio{
+		overflow: hidden;
+		display: block;
+		float: inherit;
+		background-color: transparent;
+		margin: 0px 0 0px 0;
+		text-align: right;
+		padding: 0 0 0 0;
+	}
+
+	.compartir_anuncio a span{
+		display: none;
+	}
+
+	.top_detalle{
+		padding-bottom: 4px;
+	}
+
+	.top_publicar{
+		    padding-bottom: 20px;
+	}
+
+	.top_publicar h1{
+		font-size: 22px;
+	}
+
+	.compartir_anuncio a i{
+		color: #333;
+	}
+
+	.box_caracteristicas{
+		width: 32.911111%;
+	}
+	
+	.cont_tipo_vehiculo li a span{
+		width: auto;
+	}
+	
+	.cont_tipo_vehiculo li {
+    	width: 28%;
+	}
+	
+	.cont_tipo_vehiculo li a {
+    	width: auto;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 930px) and (min-width: 5px) {
+
+	.listado_anuncios li {
+		width: 30%;
+	}
+
+}
+
+
+@media only screen and (max-width: 912px) and (min-width: 5px) {
+
+	.contenido_resumen {
+		width: 57%;
+	}
+
+
+	.cont_anuncios li{
+		padding-bottom: 11px;
+	}
+
+	.cont_tags {
+		width: 69%;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 911px) and (min-width: 5px) {
+
+	.cont_tabs_buscador input[type="text"]{
+		    width: 232px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 903px) and (min-width: 5px) {
+
+	.datos_subir_video input[type=text]{
+		width: 100%;
+		padding-right: 10px;
+	}
+
+	.datos_subir_video span{
+		width: auto;
+		display: block;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+}
+
+
+@media only screen and (max-width: 899px) and (min-width: 5px) {
+
+	.right_cuenta .contenido_resumen {
+		width: 58%;
+	}
+
+}
+
+
+@media only screen and (max-width: 876px) and (min-width: 5px) {
+
+
+	.metodos_de_pago input[type=radio].css-checkbox + label.css-label-radio{
+		margin-bottom: 91px;
+	}
+
+	.metodos_de_pago  hr{
+		margin: 20px 0 30px 0;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 870px) and (min-width: 5px) {
+
+	
+	.listado_vehiculos{
+		margin-left: 0;
+		float: inherit;
+		width: auto;
+	}
+
+	.contenido_resumen{
+		display: inline-block;
+		float: inherit;
+		width: 64%;
+	}
+
+	.resumen_anuncio{
+		margin: 10px 0 0px 0;
+	}
+
+	.cont_detalle_anunciante .caracteristica_contactar{
+		display: none;
+	}
+
+
+	.cont_detalle_anunciante .contenido_resumen{
+		width: 64%;
+	}
+
+	.datos_perfil{
+		width: auto;
+		float: inherit;
+	}
+
+	.foto_perfil{
+		margin-right: 10px;
+	}
+
+	.cont_detalle_anunciante .det_contactar_movil{
+		display: block!important;
+		float: inherit;
+		width: auto;
+		margin-top: 20px;
+	}
+
+
+	.btn_filtro_opciones{
+		display: inline-block;
+	}
+
+	.filtros_listado h2{
+		padding-right: 26px;
+	}
+
+
+	.cerrar_form{
+		display: block;
+	}
+
+
+	.filtros_listado{
+		width: 260px;
+		height: 99%;
+		position: fixed;
+		top: 0px;
+		left: -320px;
+		z-index: 31;
+		background: #ffffff;
+		padding: 10px 8px 0 8px;
+		-webkit-box-shadow: 0px 3px 35px -4px rgba(0,0,0,0.80);
+		-moz-box-shadow: 0px 3px 35px -4px rgba(0,0,0,0.80);
+		box-shadow: 0px 3px 35px -4px rgba(0,0,0,0.80);
+		overflow-y: scroll;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 850px) and (min-width: 5px) {
+
+	.box_datos_contacto .detalle_anunciante{
+		width: 55%;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1020px) and (min-width: 5px) {
+
+	#footer .central-wrapper{
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+	}
+
+	.central_telefonica{
+		display: block;
+		width: auto;
+		padding: 25px 10px 14px 10px;
+		margin: 0 0 17px 0;
+	}
+
+	.central_telefonica img{
+		margin-top: -3px;
+		margin-bottom: 0;
+		margin-left: 23px;
+		margin-right: 5px;
+	}
+
+
+	.central_telefonica img,
+	.central_telefonica span{
+		display: inline-block;
+	}
+
+	.block_enlaces{
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 0px;
+		margin: 0 0 0 0;
+	}
+
+	.block_enlaces ul{
+		margin-top: 0;
+	}
+
+	#footer .block_enlaces h3{
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+
+
+	.bottom_line{
+		margin-top: 10px;
+	}
+
+	.compras_seguras .ico_payu{
+		margin: 14px 0 4px 0;
+		display: block;
+		text-align: center;
+	}
+
+	#footer .block_enlaces h3{
+		font-size: 15px;
+	}
+
+	.titulo_camara{
+		text-align: center!important;
+		margin: 15px 8px 8px 8px!important;
+		border-top: solid 1px #353535;
+		padding: 13px 0 0 0!important;
+	}
+
+
+	.block_enlaces ul li{
+		text-align: left;
+		display: inline-block;
+		margin: 0 8px 8px 8px;
+		padding-left: 12px;
+	}
+
+	.block_enlaces ul li a {
+		font-size: 15px;
+	}
+
+
+	.redes_bottom{
+		display: block;
+		width: auto;
+		padding: 8px 0 8px 0;
+	}
+
+
+	.siswebperu, .copy{
+		display: block;
+		float: inherit;
+		text-align: center;
+		margin: 0 0 0 0;
+	}
+
+	.siswebperu{
+		margin-top: 10px;
+		margin-bottom: 8px;
+	}
+
+	.copy{
+		padding-bottom: 15px;
+	}
+
+
+	.compras_seguras{
+		position: relative;
+		right:0px;
+		margin-left: 0;
+		margin-bottom: 9px;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 841px) and (min-width: 5px) {
+
+	.subir_fotos,
+	.subir_recomendaciones{
+		float: inherit;
+		width: auto;
+	}
+
+	.subir_recomendaciones{
+		margin-top: 20px;
+	}
+
+	.subir_recomendaciones ul li{
+		margin-bottom: 4px;
+	}
+
+	.subir_recomendaciones h4{
+		margin-bottom: 10px;
+	}
+
+	.subir_grande{
+		height: 390px;
+		background-position: center 30%;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 833px) and (min-width: 5px) {
+
+	.right_cuenta .contenido_resumen .anunciante{
+		display: none;
+	}
+
+	.right_cuenta .caract_anuncio{
+		width: auto;
+	}
+
+	.right_cuenta .contenido_resumen {
+		width: 46%;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 826px) and (min-width: 5px) {
+
+	.cont_tipo_vehiculo li a{
+		width: auto;
+		height: 143px;
+		font-size: 14px;
+		font-family: 'ralewaybold';
+	}
+
+
+	.cont_tipo_vehiculo li {
+		width: 28%;
+		vertical-align: top;
+	}
+
+	.cont_tipo_vehiculo li a span{
+		background-position: center -113px;
+		margin-bottom: 14px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 821px) and (min-width: 5px) {
+
+	.menu{
+		margin-left: 20px;
+	}
+
+	.menu ul li{
+		padding: 0 7px 0 7px;
+	}
+
+	.menu ul li a{
+		font-size: 14px;
+	}
+
+	.menu ul li a:before{
+		right: -10px;
+	}
+
+	.banner-text-container {
+		bottom: 5%;
+	}
+
+	.cont_buscador_home{
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0px 0px 10px 0px;
+		background-color: #3a3a3a;
+
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		-ms-border-radius: 0px;
+		-o-border-radius: 0px;
+		border-radius: 0px;
+		-khtml-border-radius: 0px;
+	}
+
+	.cont_tabs_buscador{
+		background-color: #f1e60f;
+		padding: 0px 8px 0px 8px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		-ms-border-radius: 0px;
+		-o-border-radius: 0px;
+		border-radius: 0px;
+		-khtml-border-radius: 0px;
+	}
+
+
+	.cont_tabs_buscador select{
+		width: 21%;
+	}
+
+	.btn_buscar:hover{
+		border: solid 2px #222222;
+	}
+
+	.cont_anuncio_carrusel{
+		display: none;
+	}
+
+	.caracteristica_contactar{
+		display: none;
+	}
+
+	.imagen_caracteristicas_detalle{
+		width: 100%;
+		padding-left: 0;	
+	}
+
+	.descripcion_detalle .contactar_movil{
+		margin-top: 20px;
+		display: block;
+		border-top: solid 3px #f53e3e;
+	}
+
+	
+}
+
+
+@media only screen and (max-width: 788px) and (min-width: 5px) {
+
+	.cont_marca_modelo li{
+		width: 30%;
+	}
+
+	.logo_marca {
+		width: 37%;
+	}
+
+
+	 .tabs nav a {
+		font-size: 14px;
+		padding: 15px 8px 15px 8px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 780px) and (min-width: 5px) {
+
+	.right_cuenta .contenido_resumen {
+		width: 49%;
+	}
+}
+
+
+
+
+
+@media only screen and (max-width: 770px) and (min-width: 5px) {
+
+	.cont_menu_lateral{
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 0;
+	}
+
+	.listado_menu{
+		margin: 15px 0 0 0;
+	}
+
+	.listado_menu a{
+		display: inline-block;
+		font-size: 13px;
+		text-align: center;
+		margin-left: 5px;
+		margin-right: 5px;
+		line-height: 23px;
+		margin-bottom: 5px;
+	}
+
+	.telefono_lateral,
+	.email_lateral,
+	.info_avatar,
+	.top_menu_lateral,
+	.mostrar_perfil{
+		display: none;
+	}
+
+	.menu_lateral_cuenta{
+		width: auto;
+		padding-right: 0px;
+		float: inherit;
+		 margin-top: 6px;
+
+	}
+
+	.cont_menu_lateral:before,
+	.cont_menu_lateral:after{
+		display: none;
+	}
+	
+	.user_avatar{
+		width: auto;
+	}
+
+
+	.listado_menu a i,
+	.telefono_lateral i,
+	.email_lateral i{
+		margin-right: 7px;
+	}
+
+
+	.right_cuenta .contenido_resumen {
+		width: 49%;
+	}
+
+	.right_cuenta {
+		width: auto;
+		display: block;
+		margin-left: 0;
+		float: inherit;
+	}
+
+	.right_cuenta h2{
+		width: auto;
+		float: inherit;
+	}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 761px) and (min-width: 5px) {
+
+	.contenido_resumen{
+		width: 58%;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 752px) and (min-width: 5px) {
+
+	.menu{
+		display: none;
+	}
+
+	.botones_top .btn_ingresa{
+		width: 52px!important;
+		height: 46px!important;
+		font-size: 0!important;
+		background-position: 13px 13px!important;
+	}
+
+	.botones_top .boton{
+		width: 52px!important;
+		height: 46px;
+		background-image: url(../images/promote.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		font-size: 0;
+	}
+
+	.botones_top .boton:hover{
+		border-color: #fff!important;
+	}
+
+	.botones_top .btn_ingresa:hover {
+		background-position: -27px 13px!important;
+		border: solid 2px #f1e60f!important;
+	}
+
+	.cont_buscador_redes{
+		top: 70px;
+	}
+
+	.redes_top a{
+		width: 34px;
+		height: 34px;
+	}
+
+	.menu_listado a{
+		width: 107px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-bottom: 3px;
+	}
+
+	.interiores .cont_buscador_redes{
+		top: 74px;
+	}
+
+	.search-box input[type="text"]{
+		height: 34px;
+	}
+
+	.search-box input[type="submit"]{
+		height: 34px;
+	}
+
+	.banner_interiores{
+		height: 56px;
+		margin: 0 0 18px 0;
+	}
+
+	.cont_planes ul li{
+		width: 31%;
+		padding: 10px 8px 25px 8px;
+	}
+
+
+	.cont_planes .boton{
+		width: 100%!important;
+		background-image: none;
+		text-indent: 0;
+	}
+
+	.cont_planes p{
+		font-size: 15px;
+		font-family: 'ralewaysemibold';
+	}
+
+
+	.cont_planes h3{
+		font-size: 22px!important;
+	}
+
+	.precio_plan{
+		font-size: 22px;
+	}
+
+	.box_caracteristicas{
+		width: 46.911111%;
+	}
+
+
+
+	.cont_detalle_anunciante .contenido_resumen{
+		width: 58%;
+	}
+
+	.cont_detalle_anunciante .anunciante{
+		display: none;
+	}
+
+
+	.cont_detalle_anunciante .caract_anuncio{
+		    width: auto;
+	}
+
+
+	.cont_detalle_anunciante .titulo_precio h2{
+		width: auto;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 727px) and (min-width: 5px) {
+
+	.txt_boletin h3{
+		font-size: 20px;
+	}
+
+	.txt_boletin p{
+		font-size: 17px;
+	}
+
+
+	.box_datos_contacto .detalle_anunciante{
+		width: 59%;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 714px) and (min-width: 5px) {
+	.cont_tabs_buscador input[type="text"]{
+		width: 195px;	
+	}
+}
+
+
+@media only screen and (max-width: 680px) and (min-width: 5px) {
+		.btn_anterior{
+			margin-left: 0;
+		}
+
+		.btn_continuar{
+			margin-right: 0;
+		}
+
+}
+
+
+@media only screen and (max-width: 676px) and (min-width: 5px) {
+
+	.cont_tabs_buscador select{
+		width: 49%;
+		margin-bottom: 5px;
+		margin-top: 10px;
+		margin-right: 0;
+	}
+
+	.cont_tabs_buscador input[type="text"]{
+		width: 100%;
+		margin-top: 5px;
+	}
+
+
+	.cuadro_busqueda_home{
+		width: 74%;
+
+	}
+
+	.btn_buscar{
+		margin-top: 1px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 670px) and (min-width: 5px) {
+
+	.listado_anuncios li {
+		width: 44%;
+	}
+
+}
+
+
+@media only screen and (max-width: 665px) and (min-width: 5px) {
+
+	.central_telefonica{
+		padding-top: 19px;
+		padding-bottom: 19px;
+	}
+
+	#footer .central_telefonica h3{
+		display: block;
+		border: none;
+		margin-bottom: 0;
+	}
+
+	.central_telefonica .ico_telefono_footer{
+		margin: -14px 0 0px 0;
+	}
+
+	.anunciante{
+		display: none;
+	}
+
+	.caract_anuncio{
+		width: auto;
+	}
+
+	.contenido_resumen{
+		width: 47%;
+	}
+
+	.menu_listado a{
+		width: 31%;
+	}
+
+	.box_datos_contacto .detalle_anunciante,
+	.ver_cerrar{
+		float: inherit;
+		width: auto;
+	}
+
+	.ver_cerrar{
+		text-align: left;
+		margin-top: 10px;
+	}
+
+	.ver_cerrar span{
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 658px) and (min-width: 5px) {
+
+	.datos_subir_video label{
+		font-size: 14px;
+		font-family: 'ralewayregular';
+	}
+
+}
+
+@media only screen and (max-width: 657px) and (min-width: 5px) {
+
+	.cont_registro{
+		width: auto;
+		padding: 30px 10px 43px 10px;
+	}
+
+
+	.cont_registro form{
+		padding: 25px 10px 25px 10px;
+	}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 652px) and (min-width: 5px) {
+
+	.cont_detalle_anunciante .contenido_resumen{
+		width: 47%;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 650px) and (min-width: 5px) {
+
+	.box_guardar_cambios{
+		padding: 13px 10px 23px 10px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 642px) and (min-width: 5px) {
+
+	.cont_destacados_home .tabs nav a{
+	    border: solid 1px #444444;
+	    margin: 2px 0 8px 0;
+	}
+
+	.cont_destacados_home .tabs nav li.tab-current a,
+	.cont_destacados_home .tabs nav a:hover{
+		border-color: transparent;
+	}
+
+	.form_boletin input[type="text"]{
+		width: 30%;
+	}
+
+
+	.form_boletin input[type=checkbox].css-checkbox + label.css-label{
+		width: auto;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 620px) and (min-width: 5px) {
+
+	.resumen_compra,
+	.resumen_subtotal{
+		width: auto;
+		display: block;
+		float: inherit;
+		text-align: left;
+	}
+
+	.resumen_compra span{
+		display: block;
+	}
+
+
+	.resumen_subtotal h5,
+	.resumen_subtotal .precio_subtotal,
+	.resumen_compra span{
+		padding-left: 28px;
+	}
+
+
+	.resumen_subtotal .precio_subtotal{
+		display: block;
+		text-align: left;
+		padding-bottom: 20px;
+	}
+
+
+	.aviso_igv,
+	.cont_total{
+		text-align: left;
+		padding-left: 18px;
+	}
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 615px) and (min-width: 5px) {
+
+	.box_guardar_cambios input{
+		float: inherit;
+		width: 100%!important;
+	}
+
+
+	.box_guardar_cambios .btn_guardar{
+		display: block!important;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 592px) and (min-width: 5px) {
+	.cuadro_busqueda_home{
+		width: 71%;
+	}
+}
+
+
+@media only screen and (max-width: 607px) and (min-width: 5px) {
+
+	.subir_chicos a{
+		height: 80px;
+		display: inline-block;
+		float: initial;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 575px) and (min-width: 5px) {
+
+
+	.foto_perfil{
+		display: block;
+		float: inherit;
+		margin-left: 0;
+		overflow: hidden;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 571px) and (min-width: 5px) {
+
+	.box_registro_left,
+	.box_registro_right{
+		float: inherit;
+		width: auto;
+	}
+
+	.box_registro_right{
+		text-align: left;
+	}
+
+	.box_registro_left{
+		overflow: hidden;
+	}
+
+
+	.box_registro_left .tipo_doc{
+		width: 100%;
+	}
+
+	.cont_registro select,
+	.box_registro_left .numero_doc{
+		float: inherit;
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 570px) and (min-width: 5px) {
+
+	.top_subtitulos p{
+		padding-left: 0;
+	}
+
+	.datos_caracteristicas{
+		    margin: 30px -10px 30px;
+	}
+
+	.datos_caracteristicas .box_caract{
+		width: 49.9999742233333%;
+	}
+
+	.box_col_1{
+		width: 50%;
+		margin-bottom: 10px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+
+	.box_tipo{
+		padding: 10px 5px 12px 5px;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 552px) and (min-width: 5px) {
+
+
+	.sy-slide > img{
+		width: 160%;
+		max-width:inherit;
+		margin-left: -32%;
+	}
+
+	.form_boletin input[type="text"]{
+		width: 100%;
+	}
+
+	.form_boletin .btn_enviar{
+		margin-bottom: 10px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 545px) and (min-width: 5px) {
+
+	.contenido_resumen{
+		display: block;
+		width: auto;
+		margin-left: 0;
+		text-align: left;
+		margin-top: 15px;
+	}
+
+	.cont_anuncios li{
+		text-align: center;
+		padding: 15px 10px 11px 10px;
+	}
+
+	.cont_anuncios li a{
+		display: block;
+	}
+
+	.cont_anuncios .imagen_anuncio{
+		width: auto;
+		height: auto;
+	}
+
+	.cont_tags{
+		width: auto;
+		float: inherit;
+	}
+
+	.ordenar_listado{
+		float: inherit;
+	}
+
+
+	.ordenar_listado select{
+		width: 100%;
+	}
+
+	
+	.descripcion_detalle .content section{
+		padding: 24px 10px 20px 10px;
+		margin: 12px 0px 2px 0px;
+	}
+
+
+	.left_caract,
+	.right_caract{
+		width: auto;
+		float: inherit;
+	}
+
+
+	.cont_planes ul li{
+		width: auto;
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+
+	.tabs_planes nav a{
+		font-size: 14px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.right_cuenta .contenido_resumen{
+		width: auto;
+		display: block;
+	}
+
+
+	.cont_detalle_anunciante .contenido_resumen{
+		width: auto;
+		display: block;
+		margin-left: 0;
+	}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 540px) and (min-width: 5px) {
+	
+	.cont_ico_pago{
+		display: block;
+		margin-top: 15px;
+	}
+}
+
+
+@media only screen and (max-width: 533px) and (min-width: 5px) {
+	.cuadro_busqueda_home {
+		width: 63%;
+	}
+}
+
+
+@media only screen and (max-width: 528px) and (min-width: 5px) {
+
+
+	.ver_cerrar span{
+		display: block;
+		margin-left: 0;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 520px) and (min-width: 5px) {
+
+	.cont_tipo_vehiculo li{
+		width: 46%
+	}
+
+	.interiores .cont_buscador_redes{
+		width: 100%;
+		padding-left: 20px;
+	}
+
+	.interiores .search-box{
+		width: 100%;
+		margin-bottom: 9px;
+	}
+
+	.search-box input[type="text"]{
+		width: 100%;
+	}
+
+	.banner_interiores{
+		height: 96px;
+	}
+
+
+	.box_caracteristicas{
+		display: block;
+		width: auto;
+		margin-bottom: 20px;
+	}
+
+	.box_caracteristicas h4 {
+		font-size: 16px;
+	}
+
+}
+
+
+
+
+@media only screen and (max-width: 510px) and (min-width: 5px) {
+
+	.pag_anterior,
+	.pag_siguiente{
+		font-size: 0!important;
+		background-position: center -30px;
+	}
+
+	.pag_siguiente:hover,
+	.pag_anterior:hover{
+		background-position: center 9px;
+	}
+}
+
+
+@media only screen and (max-width: 495px) and (min-width: 5px) {
+	
+	.cta_cte_titular{
+		display: block;
+		width: auto;
+		margin-left: 0;
+	}
+
+	.float_left{
+		float: inherit;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 487px) and (min-width: 5px) {
+
+	.modelos_vehiculos{
+		padding: 0 10px 0 10px;
+	}
+
+	.cont_marca_modelo li a{
+		font-size: 13px;
+		font-family: 'ralewaybold';
+	}
+
+}
+
+
+@media only screen and (max-width: 473px) and (min-width: 5px) {
+
+	.cont_registro input[type="submit"]{
+		margin-top: 30px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 471px) and (min-width: 5px) {
+
+	.tabs_buscador a{
+		width: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.banner-text-container{
+		bottom: 0%;
+	}
+
+	.banner-text-container h2{
+		font-size: 22px;
+		line-height: 27px;
+	}
+
+	.mostrar_img_avatar{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.subir_img_avatar h5{
+		text-align: center;
+	}
+
+	.subir_input{
+		padding: 13px 10px 13px 10px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 465px) and (min-width: 5px) {
+
+	.compras_seguras span{
+		display: block;
+		text-align: center;
+		margin: 5px 0px 10px 0;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 453px) and (min-width: 5px) {
+
+	.cont_ingresar{
+		width: auto;
+	}
+
+	.cont_ingresar input[type="submit"]{
+		float: inherit;
+	}
+
+	.olvidaste_contrasena{
+		float: inherit;
+	}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 450px) and (min-width: 5px) {
+
+	.listado_anuncios li {
+		width: auto;
+		display: block;
+		margin-right: 0;
+	}
+
+	.imagen_anuncio img{
+		width: 100%;
+		height: auto;
+	}
+
+	.listado_anuncios{
+		margin-right: 0;
+	}
+
+
+	.subir_grande{
+		height: 240px;
+		background-position: center 5%;
+	}
+
+	.subir_chicos a{
+		width: 29%;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 445px) and (min-width: 5px) {
+
+
+	.metodos_de_pago input[type=radio].css-checkbox + label.css-label-radio{
+		width: 175px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	body .metodos_de_pago h5 span{
+		margin: 0 7px 20px 0px;
+		padding-left: 32px;
+		font-size: 13px;
+
+	}
+
+
+}
+
+
+@media only screen and (max-width: 442px) and (min-width: 5px) {
+
+	.central_telefonica img,
+	.central_telefonica span{
+		display: block;
+		text-align: center;
+		margin: 7px auto 7px auto;
+	}
+
+	.cont_boletin{
+		padding-bottom: 60px;
+	}
+
+
+	.cont_publicar{
+		padding-top: 30px;
+	}
+
+	.cont_planes ul{
+		margin-top: 30px;
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 422px) and (min-width: 5px) {
+
+
+	.box_datos_contacto .detalle_anunciante, .ver_cerrar{
+		text-align: center;
+	}
+
+	.det_img_anunciante{
+		float: inherit;
+		display: inline-block;
+	}
+
+	.box_datos_contacto .det_datos_anunciante{
+		width: auto;
+		float: inherit;
+		margin-left: 0;
+	}
+
+
+	.inf_genero{
+		margin-bottom: 20px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 421px) and (min-width: 5px) {
+	.cuadro_busqueda_home {
+		width: 100%;
+	}
+
+	.cont_tabs_buscador input[type="text"]{
+		margin: 5px 5px 7px 0;
+	}
+
+	.btn_buscar {
+		width: 100%!important;
+	}
+
+	.cont_tabs_buscador {
+    padding-bottom: 8px;
+}
+}
+
+
+@media only screen and (max-width: 420px) and (min-width: 5px) {
+
+	.tabs_planes nav a{
+		border: solid 1px #444444;
+		margin: 2px 0 8px 0;
+	}
+
+	.tabs_planes nav li.tab-current a,
+	.tabs_planes nav a:hover{
+		border-color: transparent;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 410px) and (min-width: 5px) {
+
+	.cont_tabs_buscador input[type="text"]{
+		width: 100%;
+		margin-bottom: 8px;
+	}
+
+
+	.cont_tabs_buscador{
+		padding-bottom: 8px;
+	}
+
+	.btn_buscar{
+		width: 100%!important;
+	}
+
+	.cont_marca_modelo li{
+		width: 46%;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 400px) and (min-width: 5px) {
+
+	.cont_ingresar{
+		padding: 30px 10px 43px 10px;
+
+	}
+	.cont_ingresar form{
+		padding: 25px 10px 25px 10px;
+	}
+}
+
+
+
+@media only screen and (max-width: 386px) and (min-width: 5px) {
+
+	.boton_subir{
+		display: block;
+		margin: 0 auto 0 auto;
+	}
+
+	.subir_input span{
+		display: block;
+		text-align: center;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 375px) and (min-width: 5px) {
+
+	.btn_anterior,
+	.btn_continuar{
+		width: 145px!important;
+	}
+
+	.btn_anterior{
+		text-indent: 18px;
+	}
+
+	.btn_continuar{
+		background-position: 107px -44px;
+		text-indent: -33px;
+	}
+
+
+	.btn_ver_publicacion{
+		width: 100%!important;
+		text-indent: 0px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 370px) and (min-width: 5px) {
+
+
+	.logo{
+		width: 150px;	
+	}
+
+	.botones_top{
+		margin-top: 4px;
+	}
+
+	.cont_tipo_vehiculo li a{
+		font-size: 13px;
+	}
+
+	.form_boletin .btn_enviar {
+		width: 100%!important;
+	}
+
+	.siswebperu, .copy{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.menu_listado a{
+		width: 32.91111%;
+		font-size: 0;
+		padding: 0 0px 3px 0px;
+	}
+
+	.menu_listado a span{
+		margin: 0 0 5px 0;
+	}
+
+	.paginador a{
+		padding: 6px 10px 5px 10px;
+	}
+
+	.interiores .cont_buscador_redes{
+		top: 64px;
+	}
+
+	.mas_caracteristicas table tr td.t-label,
+	.mas_caracteristicas table tr td.t-value{
+		padding-top: 7px!important;
+		padding-bottom: 5px!important;
+	}
+
+	.mas_caracteristicas .left_caract table tr td.sin_borde{
+		border-bottom: 1px solid #d5d9e0;
+	}
+
+	.box_col_1{
+		float: inherit;
+		width: auto;
+	}
+
+	.datos_caracteristicas .box_caract{
+		float: inherit;
+		width: auto;
+		padding: 0 0px;
+		margin-bottom: 10px;
+	}
+
+
+
+	.datos_caracteristicas{
+		margin: 20px 0px 20px;
+	}
+
+	.cont_publicar h2{
+		font-size: 18px;
+	}
+
+	.cont_publicar h3{
+		font-size: 16px;
+		padding-bottom: 9px!important;
+	}
+
+
+	.cont_boton_subir{
+		font-size: 13px;
+	}
+
+
+	.cont_registro .mes_nac{
+		    margin: 0 2px 8px 2px!important;
+	}
+
+
+	.compras_seguras span{
+		display: block;
+		margin-right: 0;
+		margin-bottom: 8px;
+	}
+
+
+	.compras_seguras{
+		text-align: center;
+		margin-bottom: 13px;
+	}
+
+
+
+
+
+
+}

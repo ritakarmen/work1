@@ -1,0 +1,1209 @@
+jQuery(document).ready(function($){
+		"use strict";
+		
+		// MOSTRAR INGRESO
+		jQuery(".btn_ingresa").click(function(e){
+			//e.preventDefault(); 
+			jQuery(".mostrar_ingreso").delay(200).animate({ top:'63px', },500,'easeOutBack');
+			jQuery(".overlay_general").delay(-300).animate({"opacity":"0.6","z-index":"30"}, 0);
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"0.7"}, 0);
+		});
+		
+		jQuery(".overlay_general").click(function(e){
+			e.preventDefault();
+			jQuery(".overlay_general").delay(100).animate({"opacity":"0", "z-index":"-10"});
+			jQuery(".mostrar_ingreso").animate({top:'-558px'});
+			jQuery(".mostrar_recuperar").animate({top:'-558px'});
+			jQuery(".mostrar_registro").delay(10).animate({opacity:0, "z-index": "-1", top:'-992px',},100,'easeOutBack');
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+		
+		jQuery(".cerrar_ingresar").click(function(e){
+			e.preventDefault();
+			jQuery(".overlay_general").delay(100).animate({"opacity":"0", "z-index":"-10"});
+			jQuery(".mostrar_ingreso").animate({top:'-558px',});
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+		
+		
+		// MOSTRAR REGISTRO
+		
+		jQuery(".btn_registrarte").click(function(e){
+			e.preventDefault(); 
+			jQuery(".mostrar_registro").delay(10).animate({opacity:1, "z-index": "10", top:'63px',},100,'easeOutBack');
+			jQuery(".mostrar_ingreso").delay(500).animate({"top": "-558px"});
+			jQuery(".overlay_general").delay(-300).animate({"opacity":"0.6","z-index":"30"}, 0);
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+		
+		jQuery(".cerrar_registro").click(function(e){
+			e.preventDefault();
+			jQuery(".mostrar_registro").delay(10).animate({opacity:0, "z-index": "-1", top:'-992px',},100,'easeOutBack');
+			jQuery(".overlay_general").delay(100).animate({"opacity":"0", "z-index":"-10"});
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+		
+		// TENGO CUENTA
+		
+		jQuery(".tengo_cuenta").click(function(e){
+			e.preventDefault(); 
+			jQuery(".mostrar_ingreso").delay(-10).animate({ top:'63px', },100,'easeOutBack');
+			jQuery(".mostrar_registro").delay(-10).animate({opacity:0, "z-index": "-1", top:'-992px',},100,'easeOutBack');
+			jQuery(".overlay_general").delay(-300).animate({"opacity":"0.6","z-index":"30"}, 0);
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+
+		jQuery(".tengo_cuenta_recuperar").click(function(e){
+			e.preventDefault(); 
+			jQuery(".mostrar_ingreso").animate({ top:'63px', },100,'easeOutBack');
+			jQuery(".mostrar_registro").animate({opacity:0, "z-index": "-1", top:'-992px'},0);
+			jQuery(".mostrar_recuperar").delay(-30).animate({top:'-558px'});
+			jQuery(".overlay_general").delay(-300).animate({"opacity":"0.6","z-index":"30"}, 0);
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+
+		// RECUPERAR CONTRASEÑA
+
+		jQuery(".olvidaste_contrasena").click(function(e){
+			e.preventDefault(); 
+			jQuery(".mostrar_recuperar").delay(150).animate({ top:'63px', },100,'easeOutBack');
+			jQuery(".mostrar_ingreso").delay(200).animate({"top": "-558px"});
+			jQuery(".overlay_general").delay(-300).animate({"opacity":"0.6","z-index":"30"}, 0);
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+
+		jQuery(".cerrar_contrasena").click(function(e){
+			e.preventDefault();
+			jQuery(".overlay_general").delay(100).animate({"opacity":"0", "z-index":"-10"});
+			jQuery(".mostrar_recuperar").animate({top:'-558px',});
+			jQuery(".cont_buscador_redes").delay(-300).animate({"opacity":"1"}, 0);
+		});
+
+		
+		// FILTROS DE BUSQUEDA PARA MOVIL
+		jQuery(".deslizar").click(function(e){
+			e.preventDefault(); 
+			jQuery(".filtros_listado").delay(100).animate({"left":"0"});
+			jQuery(".bg_overlay").delay(-300).animate({"opacity":"0.6"}, 0);
+			jQuery(".bg_overlay").delay(-300).animate({"z-index":"30"}, 0);
+		});
+		
+		jQuery(".bg_overlay").click(function(e){
+			e.preventDefault();
+			jQuery(".bg_overlay").delay(100).animate({"opacity":"0", "z-index":"-10"});
+			jQuery(".filtros_listado").animate({"left":"-320px"});
+		});
+		
+		jQuery(".cerrar_form").click(function(e){
+			e.preventDefault();
+			jQuery(".filtros_listado").animate({"left":"-320px"});
+			jQuery(".bg_overlay").delay(100).animate({"opacity":"0", "z-index":"-10"});
+		});
+		
+		// BANNER
+		var demo1 = $("#banner-slider").slippry({
+			speed: 1000,
+			pager:true,
+			adaptiveHeight: true,
+			captions: false,
+			controls: false
+		});
+				
+		// PRELOADER
+		$("#preloader-container").delay(1000).fadeOut("slow");
+
+		$(".mostrar_fono").click( function(){
+			var telefono = $(this).attr("rel");
+			$(this).parent().find(".ver_telefono").text(telefono);
+			$(this).remove();
+		})
+
+
+    	$('#form_login').h5Validate();
+    	$('#form_registro').h5Validate();
+    	$('#form_recuperar').h5Validate();
+    	$('#form_publicar').h5Validate();
+    	$('#form_perfil').h5Validate();
+    	$("#form_contacto").h5Validate();
+    	$("#form_boletin").h5Validate();
+    	$("#form_amigo").h5Validate();
+
+    	$("#form_registro").submit(function(event) {
+
+		   var result = $('#form_registro').h5Validate('allValid');
+		   
+		   if(result==true)
+		   {
+
+		   		if($("#checkboxG7").is(":checked")){
+		   			
+		   			$("#form_registro").find('.btn_ingresa').attr("disabled",true);
+
+				      $.ajax({
+				      	url: $("#base_url").val()+'anunciante/registro',
+				      	data: $('#form_registro').serialize(),
+				      	type: 'POST',
+				      	dataType: 'JSON',
+				      }).done( function(res){
+
+				      	$(".msg_registro").removeClass("alert-success");
+				      	$(".msg_registro").removeClass("alert-danger");
+				      	
+				      	if(res.codigo==0){
+
+				      		var modulo = res.modulo;
+				      		    modulo = modulo.split("-");
+
+				      		var url = (modulo[0]=='publicar') ? 'anuncio/publicar/'+modulo[1] : 'anunciante';
+
+				      		setTimeout( function(){
+				      			location.href = $("#base_url").val()+url
+				      		},2000);
+
+				      	}else{
+				      		$("#form_registro").find('.btn_ingresa').attr("disabled",false);
+				      	}
+
+				      	$(".msg_registro").addClass(res.tipo).html(res.msg);
+
+				      	
+				      }).fail( function(obj, tipo, mensaje){
+				      	$("#form_registro").find('.btn_ingresa').attr("disabled",false);
+				      	alert(tipo+": "+mensaje);
+				      })
+				}else{
+					$(".msg_registro").addClass('alert-danger').html('<b>Advertencia:</b> Debes aceptar los términos y condiciones');
+				}
+		   }
+
+		   event.preventDefault();
+		});
+
+
+		$("#form_login").submit(function(event) {
+
+		   var result = $('#form_login').h5Validate('allValid');
+		   
+		   if(result==true)
+		   {
+		   		$("#form_login").find('.btn_ingresa').attr("disabled",true);
+
+		      $.ajax({
+		      	url: $("#base_url").val()+'anunciante/login',
+		      	data: $('#form_login').serialize(),
+		      	type: 'POST',
+		      	dataType: 'JSON',
+		      }).done( function(res){
+
+		      	$(".msg_login").removeClass("alert-success");
+		      	$(".msg_login").removeClass("alert-danger");
+
+
+		      	
+		      	
+		      	if(res.codigo==0){
+
+		      		var modulo = res.modulo;
+		      		    modulo = modulo.split("-");
+
+		      		var url = (modulo[0]=='publicar') ? 'anuncio/publicar/'+modulo[1] : 'anunciante';
+
+		      		setTimeout( function(){
+		      			location.href = $("#base_url").val()+url
+		      		},2000);
+
+		      	}else{
+		      		$("#form_login").find('.btn_ingresa').attr("disabled",false);
+		      	}
+
+		      	$(".msg_login").addClass(res.tipo).html(res.msg);
+
+		      	
+		      }).fail( function(obj, tipo, mensaje){
+		      	$("#form_login").find('.btn_ingresa').attr("disabled",false);
+		      	alert(tipo+": "+mensaje);
+		      })
+		   }
+
+		   event.preventDefault();
+		});
+
+		$("#form_recuperar").submit(function(event) {
+
+		   var result = $('#form_recuperar').h5Validate('allValid');
+		   
+		   if(result==true)
+		   {
+		   		$("#form_recuperar").find('.btn_recuperar').attr("disabled",true);
+
+		      $.ajax({
+		      	url: $("#base_url").val()+'anunciante/recuperar_contrasena',
+		      	data: $('#form_recuperar').serialize(),
+		      	type: 'POST',
+		      	dataType: 'JSON',
+		      }).done( function(res){
+
+		      	$(".msg_recuperar").removeClass("alert-success");
+		      	$(".msg_recuperar").removeClass("alert-danger");
+		      	
+		      	if(res.codigo==0){
+
+		      		setTimeout( function(){
+		      			location.href = $("#base_url").val()+"anunciante"
+		      		},2000);
+
+		      	}else{
+		      		$("#form_recuperar").find('.btn_recuperar').attr("disabled",false);
+		      	}
+
+		      	$(".msg_recuperar").addClass(res.tipo).html(res.msg);
+
+		      	
+		      }).fail( function(obj, tipo, mensaje){
+		      	$("#form_recuperar").find('.btn_recuperar').attr("disabled",false);
+		      	alert(tipo+": "+mensaje);
+		      })
+		   }
+
+		   event.preventDefault();
+		});
+
+		$("#form_boletin").submit(function(event) {
+
+		   var result = $('#form_boletin').h5Validate('allValid');
+		   
+		   if(result==true)
+		   {
+		   		
+
+		   		if($("#chk_autorizar").is(":checked")){
+
+		   			$("#form_boletin").find('.btn_enviar').attr("disabled",true);
+
+			      $.ajax({
+			      	url: $("#base_url").val()+'home/enviar_boletin',
+			      	data: $('#form_boletin').serialize(),
+			      	type: 'POST',
+			      	dataType: 'JSON',
+			      }).done( function(res){
+
+			      	$(".msg_boletin").removeClass("alert-success");
+			      	$(".msg_boletin").removeClass("alert-danger");
+			      	
+			      	if(res.codigo==0){
+
+			      		$("#form_boletin").find("input[name=nombre]").val('');
+			      		$("#form_boletin").find("input[name=email]").val('');
+			      		
+			      		$("#form_boletin").find('.btn_enviar').attr("disabled",false);
+
+			      	}else{
+			      		$("#form_boletin").find('.btn_enviar').attr("disabled",false);
+			      	}
+
+			      	$(".msg_boletin").addClass(res.tipo).html(res.msg);
+
+			      	
+			      }).fail( function(obj, tipo, mensaje){
+			      	$("#form_boletin").find('.btn_enviar').attr("disabled",false);
+			      	alert(tipo+": "+mensaje);
+			      })
+
+			    }else{
+			    	$(".msg_boletin").addClass("alert-danger").html("Debes autorizar recibir email, para poder registrarte.");
+			    	return false;
+			    }
+		   }
+
+		   event.preventDefault();
+		});
+
+
+		$("#form_amigo").submit(function(event) {
+
+		   var result = $('#form_amigo').h5Validate('allValid');
+		   
+		   if(result==true)
+		   {
+		   		
+		   		$("#form_amigo").find('.btn_enviar').attr("disabled",true);
+
+		      $.ajax({
+		      	url: $("#base_url").val()+'home/enviar_amigo',
+		      	data: $('#form_amigo').serialize(),
+		      	type: 'POST',
+		      	dataType: 'JSON',
+		      }).done( function(res){
+
+		      	$(".msg_amigo").removeClass("alert-success");
+		      	$(".msg_amigo").removeClass("alert-danger");
+		      	
+		      	if(res.codigo==0){
+
+		      		$("#form_amigo").find("input[name=nombre]").val('');
+		      		$("#form_amigo").find("input[name=email]").val('');
+		      		$("#form_amigo").find("input[name=email_amigo]").val('');
+		      		
+		      		$("#form_amigo").find('.btn_enviar').attr("disabled",false);
+
+		      	}else{
+		      		$("#form_amigo").find('.btn_enviar').attr("disabled",false);
+		      	}
+
+		      	$(".msg_amigo").addClass(res.tipo).html(res.msg);
+
+		      	
+		      }).fail( function(obj, tipo, mensaje){
+		      	$("#form_amigo").find('.btn_enviar').attr("disabled",false);
+		      	alert(tipo+": "+mensaje);
+		      })
+
+			    
+		   }
+
+		   event.preventDefault();
+		});
+
+
+
+		$("#marca").change( function(){
+
+	        var html = '<option value="">Seleccionar</option>';
+
+	        if($(this).val()!=""){
+	          var ajax = _Ajax("getModelo","POST","json","id_marca="+$(this).val());
+
+	          ajax.done( function(data){
+
+	            for(var x=0; x<data.length; x++){
+	              html += '<option value="'+data[x].id_modelo+'">'+data[x].nombre+'</option>';
+	            }
+
+	            $("#modelo").html(html);
+
+	          })
+	        }else{
+	          $("#modelo").html(html);
+	        }	
+
+	    })
+
+		$("#departamento").change( function(){
+
+	        var html = '<option value="">Seleccionar</option>';
+
+	        if($(this).val()!=""){
+	          var ajax = _Ajax("getProvincia","POST","json","id_departamento="+$(this).val());
+
+	          ajax.done( function(data){
+
+	            for(var x=0; x<data.length; x++){
+	              html += '<option value="'+data[x].id_provincia+'">'+data[x].nombre+'</option>';
+	            }
+
+	            $("#provincia").html(html);
+
+	          })
+	        }else{
+	          $("#provincia").html(html);
+	        }
+
+	    })
+
+	    $("#provincia").change( function(){
+
+	        var html = '<option value="">Seleccionar</option>';
+
+	        if($(this).val()!=""){
+	          var ajax = _Ajax("getDistrito","POST","json","id_provincia="+$(this).val());
+
+	          ajax.done( function(data){
+
+	            for(var x=0; x<data.length; x++){
+	              html += '<option value="'+data[x].id_distrito+'">'+data[x].nombre+'</option>';
+	            }
+
+	            $("#distrito").html(html);
+
+	          })
+	        }else{
+	          $("#distrito").html(html);
+	        }
+
+	    })
+
+
+	    $("#categoria").change( function(){
+	    	var id = $(this).val();
+	    	
+	    	$("#div_transmision").hide();
+	    	$("#div_combustible").hide();
+    		$("#div_motor").hide();
+    		$("#div_timon").hide();
+    		$("#div_kilometraje").hide();
+    		$("#div_horometro").hide();
+    		$("#div_numero_puerta").hide();
+    		$("#div_traccion").hide();
+    		$("#div_cilindro").hide();
+    		$("#div_tonelada").hide();
+    		$("#div_pasajero").hide();
+    		$("#div_frenado").hide();
+    		$("#div_peso").hide();
+    		$("#div_arranque").hide();
+    		$("#div_potencia").hide();
+	    	$("#div_largo").hide();
+    		$("#div_ancho").hide();
+    		$("#div_alto").hide();
+    		$("#div_eje").hide();
+    		$("#div_capacidad").hide();
+    		$("#div_suspension").hide();
+    		$("#div_neumatico").hide();
+    		/**/
+    		$("#div_equipamiento").show();
+    		$("#div_exterior").show();
+    		$("#div_seguridad").show();
+    		$("#div_interior").show();
+
+
+    		$("#transmision").removeAttr("required");
+    		$("#transmision").removeClass("h5-active");
+    		
+
+	    	if(id==1){
+	    		$("#div_combustible").show();
+	    		$("#div_motor").show();
+	    		$("#div_timon").show();
+	    		$("#div_kilometraje").show();
+	    		$("#div_transmision").show();
+	    		$("#div_numero_puerta").show();
+	    		$("#div_cilindro").show();
+	    		$("#div_traccion").show();
+
+	    		$("#transmision").attr("required","required");
+	    	}else if(id==2){
+	    		$("#div_transmision").show();
+	    		$("#div_combustible").show();
+	    		$("#div_motor").show();
+	    		$("#div_cilindro").show();
+	    		$("#div_traccion").show();
+	    		$("#div_arranque").show();
+	    		$("#div_frenado").show();
+
+	    		$("#transmision").attr("required","required");
+
+	    		/**/
+	    		$("#div_equipamiento").hide();
+	    		$("#div_exterior").hide();
+	    		$("#div_seguridad").hide();
+	    		$("#div_interior").hide();
+	    	}else if(id==53){
+	    		$("#div_horometro").show();
+	    		$("#div_combustible").show();
+	    		$("#div_motor").show();
+	    		$("#div_cilindro").show();
+	    		$("#div_peso").show();
+	    		/**/
+    			$("#div_interior").hide();
+    			$("#div_exterior").hide();
+	    	}else if(id==4){
+	    		$("#div_kilometraje").show();
+	    		$("#div_horometro").show();
+	    		$("#div_transmision").show();
+	    		$("#div_combustible").show();
+	    		$("#div_timon").show();
+	    		$("#div_numero_puerta").show();
+	    		$("#div_traccion").show();
+	    		$("#div_cilindro").show();
+	    		$("#div_tonelada").show();
+	    		$("#div_pasajero").show();
+	    		$("#div_frenado").show();
+	    		$("#div_potencia").show();
+
+	    		$("#transmision").attr("required","required");
+	    	}else if(id==76){
+	    		$("#div_largo").show();
+	    		$("#div_ancho").show();
+	    		$("#div_alto").show();
+	    		$("#div_eje").show();
+	    		$("#div_peso").show();
+	    		$("#div_capacidad").show();
+	    		$("#div_suspension").show();
+	    		$("#div_neumatico").show();
+	    		/**/
+    			$("#div_interior").hide();
+	    	}else if(id==6){
+	    		$("#div_horometro").show();
+	    		$("#div_combustible").show();
+	    		$("#div_largo").show();
+	    		$("#div_alto").show();
+	    		$("#div_peso").show();
+	    		$("#div_capacidad").show();
+	    		/**/
+    			$("#div_interior").hide();
+    			$("#div_exterior").hide();
+	    	}
+
+	    	var html     = '<option value="">Seleccionar</option>';
+	    	var html_sub = '<option value="">Seleccionar</option>';
+
+	    	$("#modelo").html(html);
+
+	        if($(this).val()!=""){
+	          var ajax = _Ajax("getMarca","POST","json","id_categoria="+$(this).val());
+
+	          ajax.done( function(data){
+
+	            for(var x=0; x<data.length; x++){
+	              html += '<option value="'+data[x].id_marca+'">'+data[x].nombre+'</option>';
+	            }
+
+	            $("#marca").html(html);
+
+	          })
+
+
+	          /*SUBCATEGORIAS*/
+
+	          var ajax_sub = _Ajax("getSubcategoria","POST","json","id_categoria="+$(this).val());
+
+	          ajax_sub.done( function(data){
+
+	            for(var x=0; x<data.length; x++){
+	              html_sub += '<option value="'+data[x].id_categoria+'">'+data[x].nombre+'</option>';
+	            }
+
+	            $("#subcategoria").html(html_sub);
+
+	          })
+
+
+	        }else{
+	          $("#marca").html(html);
+	          $("#subcategoria").html(html_sub);
+	        }
+
+
+	    })
+
+	    $(".condicion_bus").click( function(){
+	    	var id = $(this).attr("rel");
+
+	    	$(".condicion_bus").removeClass("active_buscador");
+
+	    	$(this).addClass("active_buscador");
+	    	$("#condicion_busqueda").val(id);
+	    })
+
+	    $(".chk_condicion_busqueda").click( function(){
+	    	$("#form_busqueda_listado").submit();
+	    })
+
+	    $(".chk_marca_busqueda").click( function(){
+
+	    	var marca = $(this).val();
+
+	    	$(".modelo_marca_"+marca).find("input").attr("checked",false);
+
+	    	$("#form_busqueda_listado").submit();
+	    })
+
+	    $(".chk_marca_tag").click( function(){
+	    	var marca = $(this).attr("id");
+
+	    	$(".modelo_marca_"+marca).find("input").attr("checked",false);
+	    })
+
+	    $(".chk_modelo_busqueda").click( function(){
+	    	$("#form_busqueda_listado").submit();
+	    })
+
+	    $(".chk_ano_busqueda").click( function(){
+	    	$("#form_busqueda_listado").submit();
+	    })
+
+	    $(".ver_marcas_listado").click( function(){
+	    	$(this).hide();
+	    	$(".otras_marcas").show();
+	    	$(".ver_menos_marcas_listado").show();
+	    })
+
+	    $(".ver_menos_marcas_listado").click( function(){
+	    	$(this).hide();
+	    	$(".otras_marcas").hide();
+	    	$(".ver_marcas_listado").show();
+	    })
+
+	    $(".rb_comprobante").click( function(){
+	    	if($(this).val()==2){
+	    		$(".div_factura").show();
+	    		$("input[name='ruc']").attr("required","required");
+	    	}else{
+	    		$(".div_factura").hide();
+	    		$("input[name='ruc']").removeAttr("required");
+	    	}
+	    })
+
+
+	    $(".update_busqueda_cat").click( function(e){
+
+	    	e.preventDefault();
+
+	    	var id_cat = $(this).attr("rel");
+	    	$("#categoria_bus").val(id_cat);
+
+	    	$("#form_busqueda_listado").submit();
+
+	    })
+
+	    $(".busqueda_auto").keyup( function(){
+	    	var texto = $(this).val();
+
+	    	if(texto.length>=3){
+
+	    		var ajax = _Ajax("getBusqueda","POST","json","txt_busqueda="+texto);
+
+	          	ajax.done( function(data){
+
+	          		var html = '<ul>';
+
+	          		if(data.length>0){
+		           		for(var x=0; x<data.length; x++){
+		              		html += '<li>'+data[x].anuncio+'</li>';
+		            	}
+		        	}else{
+		        		html += '<li>No se encontro resultados</li>';
+		        	}
+		            html += '</ul>';
+
+		            $(".div_busqueda_auto").html(html).show("slow");
+
+		        })
+
+	    	}else{
+	    		$(".div_busqueda_auto").hide("slow");
+	    	}
+	    })
+
+	    $(document).on("click",".div_busqueda_auto li", function(){
+	    	var texto = $(this).text();
+	    	$(".busqueda_auto").val(texto);
+	    	$("#form_busqueda").submit();
+	    })
+
+	    $(".busqueda_auto_home").keyup( function(){
+	    	var texto = $(this).val();
+
+	    	if(texto.length>=3){
+
+	    		var ajax = _Ajax("getBusqueda","POST","json","txt_busqueda="+texto);
+
+	          	ajax.done( function(data){
+
+	          		var html = '<ul>';
+
+	          		if(data.length>0){
+		           		for(var x=0; x<data.length; x++){
+		              		html += '<li>'+data[x].anuncio+'</li>';
+		            	}
+		        	}else{
+		        		html += '<li>No se encontro resultados</li>';
+		        	}
+		            html += '</ul>';
+
+		            $(".div_busqueda_auto_home").html(html).show("slow");
+
+		        })
+
+	    	}else{
+	    		$(".div_busqueda_auto_home").hide("slow");
+	    	}
+	    })
+
+	    $(document).on("click",".div_busqueda_auto_home li", function(){
+	    	var texto = $(this).text();
+	    	$(".busqueda_auto").val(texto);
+	    	$("#form_busqueda").submit();
+	    })
+
+	    
+	    $(".cerrar_tag").click( function(){
+	    	var texto = $(this).attr("rel");
+
+	    	$("#limpiar_variable").val(texto);
+
+	    	$("#form_busqueda_listado").submit();
+	    })
+
+		init_contadorTa("descripcion","count_textarea", 2500);
+
+		
+
+        var button_perfil   = $('#upload_perfil');
+
+        new AjaxUpload(button_perfil,{
+          action: $("#base_url").val()+'ajax/subir_perfil', 
+          name: 'file',
+          data: {csrf_token_maqautos:$("input[name=csrf_token_maqautos]").val(),id:1},
+          onSubmit : function(file, ext){
+
+          var fotos_actuales = $(".mostrar_img_avatar").find("img").length;
+
+          if (!(ext && /^(jpg|png|JPG|jpeg)$/.test(ext))){
+            // extensiones permitidas
+            alert('Sólo se permiten Imagenes (.jpg .png .JPG o .jpeg)');
+            // cancela upload
+            return false;
+          } else if(file.length >40){
+
+            alert('El nombre de la imagen es muy largo, solo se permiten hasta 40 caracteres');
+            return false;
+          }else if(fotos_actuales>0){
+
+          	/*alert('Debe eliminar su foto actual para subir una nueva');
+            return false;*/
+
+          }else{
+            $(".load_g").slideDown();
+            // desabilitar el boton
+            this.disable();
+          }
+          },
+          onComplete: function(file, response){
+            $(".load_g").slideUp(); 
+            // Habilitar boton otra vez
+            this.enable();
+
+            // Añadiendo las imagenes a mi lista
+            $(".mostrar_img_avatar").html(response);
+            $('.mostrar_img_avatar a').eq(0).hide().css("opacity","0");
+            $('.mostrar_img_avatar a').eq(0).fadeIn("slow");
+            $(".mostrar_img_avatar a").animate({opacity: 1.0}, 1500);
+            //$('#subir_chicos').effect("transfer", { to: $('#subir_chicos a').eq(0) }, 1000);
+          }
+        });
+
+        $(document).on("click",".eliminar_imagen_galeria", function(){
+
+	      var a = $(this);
+	      $.post($("#base_url").val()+'ajax/eliminar_galeria/anuncio',{csrf_token_maqautos:$("input[name=csrf_token_maqautos]").val(),id:a.attr("rel")},function(data){
+	        
+	      	
+	        if(data==0){
+
+	          a.parent().remove();
+
+	          var fotos_actuales = parseInt($(".imagen-li").length);
+
+              $(".count_galeria").text(fotos_actuales);
+              $("#fotos_actuales").val(fotos_actuales);
+	         
+	        }else{
+	          alert('No se pudo eliminar la imagen del servidor, intentelo mas tarde');
+	        }
+	          
+	      })
+	      
+	    })
+
+	    $(document).on("click",".eliminar_imagen_aviso", function(){
+
+
+	    	if(confirm("¿Esta seguro de eliminar esta imagen?")){
+
+		      var a = $(this);
+		      $.post($("#base_url").val()+'ajax/eliminar_imagen_aviso/anuncio',{csrf_token_maqautos:$("input[name=csrf_token_maqautos]").val(),imagen:a.attr("rel"),id:a.attr("id")},function(data){
+		        if(data==0){
+		          
+		          a.parent().remove();
+
+		          var fotos_actuales = parseInt($(".imagen-li").length);
+
+	              $(".count_galeria").text(fotos_actuales);
+	              $("#fotos_actuales").val(fotos_actuales);
+		          
+		        }else{
+		          alert('No se pudo eliminar la imagen del servidor, intentelo mas tarde');
+		        }
+		          
+		      })
+
+		    }else{
+		    	return false;
+		    }
+	      
+	    })
+
+	    $(document).on("click",".eliminar_imagen_perfil", function(){
+
+	      var a = $(this);
+	      $.post($("#base_url").val()+'ajax/eliminar_galeria/anunciante',{csrf_token_maqautos:$("input[name=csrf_token_maqautos]").val(),id:a.attr("rel")},function(data){
+	        if(data==0){
+	          a.parents(".img").animate({opacity: 0}, 1000);
+	          a.parents(".img").remove();
+
+	          //a.parent().effect("transfer", { to: $('#upload_galeria') }, 1000, function(){ a.parent().remove(); });
+	        }else{
+	          alert('No se pudo eliminar la imagen del servidor, intentelo mas tarde');
+	        }
+	          
+	      })
+	      
+	    })
+
+	    $(".confirmar_delete").click( function(){
+		    var url = $(this).attr("href");
+
+		    var r = confirm("¿Desea eliminar este registro?");
+
+		    if(r){
+		    	location.href=url;
+		    }else{
+		    	return false;
+		    }
+		    
+
+		})
+
+		$("#checkbox_consultar_precio").click( function(){
+			if($(this).is(":checked")){
+				$("#precio").val(0).attr("readonly","readonly");
+			}else{
+				$("#precio").val('').removeAttr("readonly");
+			}
+		})
+
+		$("select[name=condicion]").change( function(){
+			if($(this).val()==1){
+				$("input[name=kilometraje]").val(0).attr("readonly","readonly");
+			}else{
+				$("input[name=kilometraje]").val('').removeAttr("readonly");
+			}
+		})
+
+
+    
+
+    	if($(".dropzone").length>0){
+
+
+    		Dropzone.autoDiscover = false;
+		    var myDropzone = new Dropzone("div#upload_galeria", 
+		    { 
+		    	url: $("#base_url").val()+'ajax/subir_galeria',
+		    	params : {csrf_token_maqautos:$("input[name=csrf_token_maqautos]").val(),total:$("#fotos_actuales").val()},
+		    	maxFiles: $("#total_fotos").val()-$("#fotos_actuales").val(),
+		    	parallelUploads: $("#total_fotos").val(),
+		    	uploadMultiple: true,
+		    	successmultiple: function(data,html){
+		    		/*console.log("SUCCESS");
+		    		console.log(data);
+		    		console.log(html);*/
+		    		$("#subir_chicos").append(html);
+		    		var total_img = parseInt($(".imagen-li").length);
+
+		    		$(".foto_principal").remove();
+
+		    		//var fotos_actuales = parseInt($(".imagen-li").length)+1;
+
+	            	$(".count_galeria").text(total_img);
+	            	$("#fotos_actuales").val(total_img);
+
+		    		$(".imagen-li").eq(0).parent().append('<span class="foto_principal">Foto Principal</span>');
+
+		    		$(".load").hide();
+
+		    	},
+		    	complete: function(data){
+		    		//console.log("COMPLETE");
+		    		//console.log(data);
+		    	},
+		    	maxfilesreached: function(data){
+		    		//console.log("MAXFILEXREAD");
+		    		//console.log(data);
+		    	},
+		    	maxfilesexceeded: function(data){
+		    		//console.log("MAXFILEXEXCE");
+		    		//console.log(data);
+		    	},
+		    	addedfile: function(data){
+		    		$(".load").show();
+		    		//console.log(data);
+		    	}
+		    });
+
+		    $("#subir_chicos").sortable({
+		    	placeholder: "ui-state-highlight",
+			    items:'.img',
+			    cursor: 'move',
+			    opacity: 0.5,
+			    containment: "#subir_chicos",
+			    distance: 20,
+			    tolerance: 'pointer',
+			    update : function (e,i) {
+			    	$(".foto_principal").remove();
+			    	$(".imagen-li").eq(0).parent().append('<span class="foto_principal">Foto Principal</span>');
+			        var order = $('#subir_chicos').sortable('serialize');
+			        
+			        $.post($("#base_url").val()+"ajax/ordenar_imagenes/","csrf_token_maqautos="+$("input[name=csrf_token_maqautos]").val()+"&"+order+"&id_anuncio="+$("input[name=id]").val());
+			    }
+			});
+
+    	}
+
+    	$("a.enviar_amigo").click( function(){
+    		$(".bg_enviar_amigo").toggle()
+    	});
+
+    	$(".bg_enviar_amigo a").click( function(){
+    		$(".bg_enviar_amigo").toggle()
+    	})
+
+    	
+    	if($("#latitud").length>0){
+
+	    	cargarMapa();
+
+	    	$("#direccion_mapa").blur( function() {
+
+			    if($("#distrito").val()!=""){
+			      var address = $('#direccion_mapa').val()+', '+$("#distrito option:selected").text()+', '+$("#provincia option:selected").text();
+			     
+			      // Creamos el Objeto Geocoder
+			      var geocoder = new google.maps.Geocoder();
+			      geocoder.geocode({ 'address': address}, geocodeResult);
+			    }
+			    
+			  });
+
+
+			  $(".distrito_mapa").change( function() {
+			   
+			    var address = $('#direccion_mapa').val()+', '+$("#distrito option:selected").text()+', '+$("#provincia option:selected").text();
+			    // Creamos el Objeto Geocoder
+			    var geocoder = new google.maps.Geocoder();
+			    geocoder.geocode({ 'address': address}, geocodeResult);
+			  });
+		}
+
+
+
+
+		
+		if($("#galeria_container").length>0){
+			// GALERIA DETALLE
+			var _SlideshowTransitions = [
+	                {$Duration: 1200, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, x: -0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, y: 0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, y: -0.3, $SlideOut: true, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, y: -0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, y: 0.3, $SlideOut: true, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, x: 0.3, $Cols: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Column: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, x: 0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, y: 0.3, $Rows: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Row: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, y: 0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, y: 0.3, $Cols: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, y: -0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, x: 0.3, $Rows: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, x: -0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+	                , { $Duration: 1200, $Delay: 20, $Clip: 3, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, $Delay: 20, $Clip: 3, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseOutCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, $Delay: 20, $Clip: 12, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                , { $Duration: 1200, $Delay: 20, $Clip: 12, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseOutCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	                ];
+
+	            var options = {
+	                $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+	                $AutoPlayInterval: 1500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+	                $PauseOnHover: 3,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+	                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+	                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+	                $SlideDuration: 800,                                //Specifies default duration (swipe) for slide in milliseconds
+	                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+	                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+	                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+	                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+	                    $ShowLink: true                                 //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+	                },
+	                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+	                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+	                    $ChanceToShow: 1                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+	                },
+	                $ThumbnailNavigatorOptions: {                       //[Optional] Options to specify and enable thumbnail navigator or not
+	                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+	                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+	                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+	                    $SpacingX: 15,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+	                    $DisplayPieces: 5,                             //[Optional] Number of pieces to display, default value is 1
+	                    $ParkingPosition: 342                          //[Optional] The offset position to park thumbnail
+	                }
+	            };
+
+	            var jssor_slider1 = new $JssorSlider$("galeria_container", options);
+	            //responsive code begin
+	            //you can remove responsive code if you don't want the slider scales while window resizes
+	            function ScaleSlider() {
+	                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+	                if (parentWidth)
+	                    jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 840), 300));
+	                else
+	                    window.setTimeout(ScaleSlider, 30);
+	            }
+
+	            ScaleSlider();
+	            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+	                $(window).bind('resize', ScaleSlider);
+	            }
+	            if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+	                $(window).bind("orientationchange", ScaleSlider);
+	            }
+
+        	}
+            //responsive code end
+
+
+
+			
+
+	
+		
+});
+
+
+
+var map;
+
+function cargarMapa(lat,lon) {
+
+    var lat = ($("#latitud").val()!="")? $("#latitud").val() : -10.640839;
+    var lon = ($("#longitud").val()!="")? $("#longitud").val()  : -76.385947;
+
+    var zoom = ($("#latitud").val()!="")? 14 : 5;
+    
+    var myLatlng = new google.maps.LatLng(lat,lon);
+    var myOptions = {
+        zoom: zoom,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    map = new google.maps.Map($("#map_canvas").get(0), myOptions);
+
+    var markerOptions = { position: myLatlng }
+    var marker        = new google.maps.Marker(markerOptions);
+    marker.setMap(map);
+}
+ 
+ 
+function geocodeResult(results, status) {
+    // Verificamos el estatus
+    if (status == 'OK') {
+        // Si hay resultados encontrados, centramos y repintamos el mapa
+        // esto para eliminar cualquier pin antes puesto
+        var mapOptions = {
+            center: results[0].geometry.location,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map($("#map_canvas").get(0), mapOptions);
+        // fitBounds acercará el mapa con el zoom adecuado de acuerdo a lo buscado
+        map.fitBounds(results[0].geometry.viewport);
+        // Dibujamos un marcador con la ubicación del primer resultado obtenido
+        var markerOptions = { position: results[0].geometry.location }
+        var marker = new google.maps.Marker(markerOptions);
+        marker.setMap(map);
+
+        $("#latitud").val(results[0].geometry.location.lat);
+        $("#longitud").val(results[0].geometry.location.lng);
+    } else {
+        // En caso de no haber resultados o que haya ocurrido un error
+        // lanzamos un mensaje con el error
+        console.log("Geocoding no tuvo éxito debido a: " + status);
+    }
+}
+
+function _Ajax(url,type,datatype,datos)
+{
+  var ajax =  $.ajax({
+                url      : $("#base_url").val()+"ajax/"+url,
+                method   : type,
+                dataType : datatype,
+                data     : "csrf_token_maqautos="+$("input[name=csrf_token_maqautos]").val()+"&"+datos
+              }).fail( function(obj,tipo,mensaje){
+                alert(tipo+": "+mensaje);
+              })
+
+  return ajax;
+}
+
+function init_contadorTa(idtextarea, idcontador,max)
+{
+	$("#"+idtextarea).keyup(function(){
+		updateContadorTa(idtextarea, idcontador,max);
+	});
+ 
+	$("#"+idtextarea).change(function(){
+			updateContadorTa(idtextarea, idcontador,max);
+	});
+ 
+}
+
+function updateContadorTa(idtextarea, idcontador,max)
+{
+	var contador = $("#"+idcontador);
+	var ta       = $("#"+idtextarea);
+
+	contador.html("0/"+max);
+	 
+	contador.html(ta.val().length+"/"+max);
+
+	if(parseInt(ta.val().length)>max){
+		ta.val(ta.val().substring(0,max-1));
+		contador.html(max+"/"+max);
+	}
+
+}
+
+function soloNumeros(evt){
+
+  if(window.event){//asignamos el valor de la tecla a keynum
+    keynum = evt.keyCode; //IE
+  }else{
+    keynum = evt.which; //FF
+  } 
+
+  //comprobamos si se encuentra en el rango numérico y que teclas no recibirá.
+  if((keynum > 47 && keynum < 58) || keynum == 8 || keynum == 13 || keynum == 6 ){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+function _Confirm(url,msg)
+{
+
+  $('.bs-example-modal-sm').remove();
+
+  var popup  = '<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" style="display: non;">';
+      popup += '<div class="modal-dialog modal-sm">';
+      popup += '<div class="modal-content">';
+      popup += '<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title" id="myModalLabel2">Sistema de Alertas</h4></div>';
+      popup += '<div class="modal-body"><h4>Advertencia</h4><p>'+msg+'</p></div>';
+      popup += '<div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button><button type="button" id="btn_aceptar" class="btn btn-primary">Aceptar</button></div>';
+      popup += '</div></div></div>';
+
+
+  $("body").append(popup);
+
+
+
+  $('.bs-example-modal-sm').modal('show').one('click', '#btn_aceptar', function (e) {
+              window.location.href = url;
+  });
+
+
+}
