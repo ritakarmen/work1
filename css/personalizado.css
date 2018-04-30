@@ -2533,7 +2533,7 @@ ______________________________ */
 .cont_anuncios li {
     display: block;
     vertical-align: top;
-    border: solid 1px #e5e5e5;
+    border: solid 1px #f0ff19;
     background-color: #fff;
     margin: 0 0px 20px 0;
     text-align: left;
@@ -2547,6 +2547,7 @@ ______________________________ */
     position: relative;
     border-bottom: solid 2px #f1e60f;
     overflow: hidden;
+    background: #f2f1ce;
 }
 
 .cont_anuncios li a {
@@ -5018,7 +5019,7 @@ ______________________________*/
 .cont_detalle_anunciante h2 {
     font-size: 22px;
     font-family: 'ralewaybold';
-    color: #333333;
+    color: #e22727;
 }
 
 .cont_detalle_anunciante .cont_anuncios {
