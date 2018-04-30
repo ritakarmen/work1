@@ -2309,20 +2309,21 @@ ______________________________ */
 
 .box_filtro h3 {
     font-size: 15px;
-    color: #2c2c2c;
+    color: #f53e3e;
     font-family: 'ralewaybold';
     margin: 0 0 20px 0;
 }
 
 .box_filtro {
     border-top: solid 3px #000;
-    background-color: #fff;
+    background-color: #faf6ae;
     padding: 18px 19px 24px 19px;
     margin: 0 0 20px 0;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
     position: relative;
+    border-radius: 15px;
 }
 
 .minimizar {
@@ -2852,8 +2853,8 @@ ______________________________ */
     display: block;
     float: left;
     width: 48%;
-    font-size: 25px;
-    color: #222;
+    font-size: 37px;
+    color: #f61212;
     text-transform: inherit;
     font-family: 'ralewaybold';
     text-align: left;
@@ -2911,7 +2912,7 @@ ______________________________ */
 }
 
 .caracteristica_contactar .box_filtro {
-    border-top: solid 3px #f53e3e;
+    border-top: solid 3px #f1e60f;
 }
 
 .caracteristica_contactar .box_filtro>table {
@@ -3032,10 +3033,10 @@ ______________________________ */
 
 .form_contact_anunciante .btn_enviar {
     display: block;
-    width: 160px!important;
+    /*width: 160px!important;*/
     height: 45px;
     margin: 16px auto 10px auto;
-    background-image: url(../images/ico_send.png);
+    background-image: url("../img/images/ico_send.png");
     background-color: #f53e3e;
     background-position: 0px -42px;
     text-indent: 21px;
@@ -3047,13 +3048,16 @@ ______________________________ */
     -o-transition: all 0.25s ease-out;
     -ms-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
+    border-radius: 12px;
 }
 
 .form_contact_anunciante .btn_enviar:hover {
-    border-color: #f53e3e;
-    color: #f53e3e;
+    border-color: #f8f6f6;
+    color: #f8f6f6;
+    /*color: #f53e3e;*/
     background-position: 0px 0px;
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background: rgb(95, 2, 2);
 }
 
 .imagen_caracteristicas_detalle {
@@ -5640,3 +5644,22 @@ ____________________________ */
     letter-spacing: -0.5px;
     position: relative;
 }
+
+
+/*:::::::inicio cambios nuevos::::::*/
+
+.box_perfil {
+    background: #faf6ae;
+    border: 5px solid #f1e60f;
+}
+
+.datos_perfil span {
+    display: block;
+    font-size: 15px;
+    font-family: 'ralewaybold';
+    padding: 7px 0 11px 0;
+    margin: 0 0 5px 0;
+    border-bottom: solid 1px #e71111;
+}
+
+.box_content {}
