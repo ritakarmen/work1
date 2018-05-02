@@ -2284,7 +2284,7 @@ ______________________________ */
 
 .cont_listado {
     overflow: hidden;
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
     padding: 0 0 40px 0;
     margin: 0 0 30px 0;
 }
@@ -2316,7 +2316,7 @@ ______________________________ */
 
 .box_filtro {
     border-top: solid 3px #000;
-    background-color: #faf6ae;
+    background-color: #ebdddd4d;
     padding: 18px 19px 24px 19px;
     margin: 0 0 20px 0;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
@@ -2533,7 +2533,7 @@ ______________________________ */
 .cont_anuncios li {
     display: block;
     vertical-align: top;
-    border: solid 1px #f0ff19;
+    /*border: solid 1px #f0ff19;*/
     background-color: #fff;
     margin: 0 0px 20px 0;
     text-align: left;
@@ -2545,9 +2545,9 @@ ______________________________ */
     border-radius: 3px;
     -khtml-border-radius: 3px;
     position: relative;
-    border-bottom: solid 2px #f1e60f;
+    /*border-bottom: solid 2px #f1e60f;*/
     overflow: hidden;
-    background: #f2f1ce;
+    /*background: #f2f1ce;*/
 }
 
 .cont_anuncios li a {
@@ -2854,8 +2854,8 @@ ______________________________ */
     display: block;
     float: left;
     width: 48%;
-    font-size: 37px;
-    color: #f61212;
+    font-size: 55px;
+    color: #f5c5c5;
     text-transform: inherit;
     font-family: 'ralewaybold';
     text-align: left;
@@ -2909,11 +2909,11 @@ ______________________________ */
 .caracteristica_contactar {
     float: left;
     width: 337px;
-    padding: 30px 0 0 0
+    padding: 30px 0 0 00
 }
 
 .caracteristica_contactar .box_filtro {
-    border-top: solid 3px #f1e60f;
+    border-top: solid 3px #96929200;
 }
 
 .caracteristica_contactar .box_filtro>table {
@@ -4961,6 +4961,20 @@ ______________________________*/
     margin-top: 30px;
 }
 
+.descripcion_datos_perfil {
+    width: 470px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-right: 1px solid white;
+}
+
+.descripcion_datos_perfil a {
+    font-size: 23px;
+    color: #ffffff;
+    margin: 10px 7px 0 0;
+}
+
 .datos_perfil span {
     display: block;
     font-size: 15px;
@@ -4973,7 +4987,7 @@ ______________________________*/
 .datos_perfil i {
     width: 17px;
     font-size: 17px;
-    color: #f53e3e;
+    color: #e3e3e3;
     vertical-align: bottom;
     margin-right: 10px;
     margin-left: 10px;
@@ -4987,7 +5001,7 @@ ______________________________*/
 }
 
 .datos_perfil a:hover i {
-    color: #f53e3e;
+    color: #dfa3a3;
 }
 
 .datos_perfil a .fa-facebook-square {
@@ -5649,10 +5663,14 @@ ____________________________ */
 
 /*:::::::inicio cambios nuevos::::::*/
 
-.box_perfil {
-    background: #faf6ae;
-    border: 5px solid #f1e60f;
+.box_content_perfil {
+    background: #7e2826;
+    color: #eba3a3;
+    padding: 60px;
+    margin-bottom: 20px;
 }
+
+.box_perfil {}
 
 .datos_perfil span {
     display: block;
@@ -5660,7 +5678,49 @@ ____________________________ */
     font-family: 'ralewaybold';
     padding: 7px 0 11px 0;
     margin: 0 0 5px 0;
-    border-bottom: solid 1px #e71111;
+    border-bottom: solid 1px #df9173;
 }
 
-.box_content {}
+
+/* new changes*/
+
+.central-wrapper {
+    width: 1600px;
+}
+
+.cont_detalle_anunciante .imagen_caracteristicas_detalle {
+    float: none;
+    width: 100%;
+}
+
+.cont_anuncios {
+    width: 73%;
+    display: inline-block;
+}
+
+.caracteristica_contactar {
+    width: 22%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4%;
+}
+
+.cont_detalle_anunciante .caracteristica_contactar {
+    margin-top: 30px;
+}
+
+.cover-gradient {
+    position: absolute;
+    top: 139px;
+    left: 0;
+    margin: 0;
+    height: 1619px;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(359deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background-repeat: repeat;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
