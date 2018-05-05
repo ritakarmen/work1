@@ -2184,7 +2184,8 @@ _____________________________*/
 .banner_interiores {
     background-color: #f1e60f;
     height: 76px;
-    margin: 0 0 38px 0;
+    margin:0;
+   /* margin: 0 0 38px 0;*/
 }
 
 .interiores .search-box,
@@ -2312,11 +2313,13 @@ ______________________________ */
     color: #f53e3e;
     font-family: 'ralewaybold';
     margin: 0 0 20px 0;
+    background: #f3f0f05e;
+    text-align: center;
 }
 
 .box_filtro {
     border-top: solid 3px #000;
-    background-color: #ebdddd4d;
+    background-color: #ebdddd7a;
     padding: 18px 19px 24px 19px;
     margin: 0 0 20px 0;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
@@ -2324,6 +2327,7 @@ ______________________________ */
     box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
     position: relative;
     border-radius: 15px;
+    top: -29px;
 }
 
 .minimizar {
@@ -2403,7 +2407,8 @@ ______________________________ */
     border: none;
     outline: 0;
     -webkit-border-radius: 1px;
-    -moz-border-radius: 1px -ms-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
     -o-border-radius: 1px;
     border-radius: 1px;
     -khtml-border-radius: 1px;
@@ -2533,11 +2538,11 @@ ______________________________ */
 .cont_anuncios li {
     display: block;
     vertical-align: top;
-    /*border: solid 1px #f0ff19;*/
+    border: solid 1px #a1a29d66;
     background-color: #fff;
     margin: 0 0px 20px 0;
     text-align: left;
-    padding: 28px 28px 28px 28px;
+    padding: 28px 23px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -3068,7 +3073,15 @@ ______________________________ */
     position: relative;
 }
 
+.box_decor_perfil{
 
+    width: 180px;
+    height: 408px;
+    position: absolute;
+    background: #0c0c0c;
+    top: 30px;
+    left: 0;
+}
 /* galeria y pestañas descripcion */
 
 
@@ -4942,27 +4955,30 @@ ______________________________*/
     background-color: #f3f3f3;
     padding: 0 0 0 0;
     text-align: center;
+    border-radius: 50%;
 }
 
 .foto_perfil .imagen_perfil {
     width: 208px;
     height: auto;
     margin: 32px;
+    
 }
 
 .foto_perfil .imagen_perfil img {
     width: 100%;
+    border-radius: 50%;
 }
-
+ 
 .datos_perfil {
-    width: 470px;
+    width: 33%;
     float: left;
     margin-left: 30px;
     margin-top: 30px;
 }
 
 .descripcion_datos_perfil {
-    width: 470px;
+    width: 33%;
     float: left;
     margin-left: 30px;
     margin-top: 30px;
@@ -4996,7 +5012,7 @@ ______________________________*/
 
 .datos_perfil a i {
     font-size: 23px;
-    color: #333333;
+    color: #ffffff;
     margin: 10px 7px 0 0;
 }
 
@@ -5022,7 +5038,7 @@ ______________________________*/
 }
 
 .cont_detalle_anunciante .contenido_resumen {
-    width: 69%;
+    width: 68%;
     margin-left: 16px;
 }
 
@@ -5031,9 +5047,10 @@ ______________________________*/
 }
 
 .cont_detalle_anunciante h2 {
-    font-size: 34px;
+    font-size: 3px;
     font-family: 'ralewaybold';
-    color: #ffcaca;
+    color: #02010100;
+    background: #020202;
 }
 
 .cont_detalle_anunciante .cont_anuncios {
@@ -5664,13 +5681,16 @@ ____________________________ */
 /*:::::::inicio cambios nuevos::::::*/
 
 .box_content_perfil {
-    background: #7e2826;
+    background:linear-gradient(to left, #7e2826, #7e2826 85%, black 8%);
     color: #eba3a3;
     padding: 60px;
     margin-bottom: 20px;
+    opacity: 0.8;
 }
 
-.box_perfil {}
+.box_perfil {
+    color: #d2dde2;
+}
 
 .datos_perfil span {
     display: block;
@@ -5683,10 +5703,10 @@ ____________________________ */
 
 
 /* new changes*/
-
+/* malogra el ancho de la web;
 .central-wrapper {
     width: 1600px;
-}
+}*/
 
 .cont_detalle_anunciante .imagen_caracteristicas_detalle {
     float: none;
@@ -5694,7 +5714,7 @@ ____________________________ */
 }
 
 .cont_anuncios {
-    width: 73%;
+    width: 70%;
     display: inline-block;
 }
 
@@ -5710,17 +5730,25 @@ ____________________________ */
     margin-top: 30px;
 }
 
-.cover-gradient {
-    position: absolute;
-    top: 139px;
-    left: 0;
-    margin: 0;
-    height: 1619px;
-    width: 100%;
-    z-index: -1;
-    background: linear-gradient(359deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-    background-repeat: repeat;
-    background-size: auto auto;
+.fondo {
+    background-image: url(../img/1104201812344377.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    height: 973px;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    width: 100%;
+}
+#main{
+    position: relative;
+}
+.central-wrapper.top_detalle.clearfix{
+    display: none;
+}
+.clearfix .box_content{
+    z-index: 99999;
+    position: relative;
 }
